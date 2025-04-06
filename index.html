@@ -1,26 +1,502 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>emma-fz-portfolio-showcase</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Emmanuel - Developer & Trader Portfolio</title>
+    <meta name="description" content="Portfolio of Emmanuel - Full-Stack Developer, Forex Trader, and Crypto Trader" />
+    <meta name="author" content="Emmanuel" />
 
-    <meta property="og:title" content="emma-fz-portfolio-showcase" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/styles/portfolio.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
-  <body>
-    <div id="root"></div>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <span class="logo">emma_fz</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#works">My Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="animated-text" data-aos="fade-up" data-aos-duration="1000">
+              Hi, I'm <span class="developer-text">Emmanuel</span>
+            </h1>
+            <p class="lead animated-text" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+              Full-Stack Developer, <span class="forex-text">Forex Trader</span> & <span class="crypto-text">Crypto Trader</span>
+            </p>
+            <div class="mt-5" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+              <a href="#works" class="btn btn-primary me-3">View My Work</a>
+              <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>About Me</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-card developer-card">
+              <div class="card-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Full-Stack Developer</h3>
+              <p>I specialize in building responsive and dynamic websites, developing full-stack applications with modern technologies, writing clean, efficient, and maintainable code, optimizing website performance, and implementing APIs and database management.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-card forex-card">
+              <div class="card-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Forex Trader</h3>
+              <p>With expertise in Smart Money Concept (SMC) Strategy and Institutional Concepts Trading (ICT) Strategy, I navigate the forex market with precision using TradingView and MT5 platforms, always maintaining disciplined risk management.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="about-card crypto-card">
+              <div class="card-icon">
+                <i class="fab fa-bitcoin"></i>
+              </div>
+              <h3>Crypto Trader</h3>
+              <p>I stay ahead in the world of cryptocurrency through detailed market analysis, understanding of DeFi ecosystems, and combining technical and fundamental analysis to identify promising investment opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>My Skills</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-category">
+              <h3 class="developer-text">Development</h3>
+              <div class="skill-item">
+                <p>HTML/CSS <span class="float-end">90%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar developer-bar" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p>JavaScript <span class="float-end">85%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar developer-bar" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p>Bootstrap <span class="float-end">95%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar developer-bar" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p>APIs <span class="float-end">80%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar developer-bar" data-width="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p>Database Management <span class="float-end">85%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar developer-bar" data-width="85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-category">
+              <h3 class="forex-text">Forex Trading</h3>
+              <div class="skill-item">
+                <p>SMC Strategy <span class="float-end">90%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar forex-bar" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p>ICT Strategy <span class="float-end">85%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar forex-bar" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p>TradingView <span class="float-end">95%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar forex-bar" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p>MT5 <span class="float-end">90%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar forex-bar" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p>Risk Management <span class="float-end">95%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar forex-bar" data-width="95%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-category">
+              <h3 class="crypto-text">Crypto Trading</h3>
+              <div class="skill-item">
+                <p>Market Analysis <span class="float-end">85%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar crypto-bar" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p>DeFi <span class="float-end">80%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar crypto-bar" data-width="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p>Technical Analysis <span class="float-end">90%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar crypto-bar" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p>Fundamental Analysis <span class="float-end">85%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar crypto-bar" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p>Risk Management <span class="float-end">95%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar crypto-bar" data-width="95%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio/Work Section -->
+    <section id="works" class="portfolio-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>My Works</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166" alt="Development Project 1" class="img-fluid">
+                <div class="portfolio-overlay developer-overlay">
+                  <div class="overlay-content">
+                    <h4>E-commerce Website</h4>
+                    <p>A fully responsive e-commerce platform with shopping cart functionality.</p>
+                    <a href="#" class="btn btn-sm btn-light">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Development Project 2" class="img-fluid">
+                <div class="portfolio-overlay developer-overlay">
+                  <div class="overlay-content">
+                    <h4>Social Media Dashboard</h4>
+                    <p>An interactive dashboard for managing social media accounts.</p>
+                    <a href="#" class="btn btn-sm btn-light">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613" alt="Forex Trading Project" class="img-fluid">
+                <div class="portfolio-overlay forex-overlay">
+                  <div class="overlay-content">
+                    <h4>Forex Signal Platform</h4>
+                    <p>A real-time forex signal dashboard for traders.</p>
+                    <a href="#" class="btn btn-sm btn-light">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="https://images.unsplash.com/photo-1639152201910-5e0d78d3de4d" alt="Crypto Trading Project" class="img-fluid">
+                <div class="portfolio-overlay crypto-overlay">
+                  <div class="overlay-content">
+                    <h4>Crypto Portfolio Tracker</h4>
+                    <p>A cryptocurrency portfolio tracking application.</p>
+                    <a href="#" class="btn btn-sm btn-light">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8" alt="Development Project 3" class="img-fluid">
+                <div class="portfolio-overlay developer-overlay">
+                  <div class="overlay-content">
+                    <h4>Educational Platform</h4>
+                    <p>An online learning platform with course management.</p>
+                    <a href="#" class="btn btn-sm btn-light">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d" alt="Development Project 4" class="img-fluid">
+                <div class="portfolio-overlay developer-overlay">
+                  <div class="overlay-content">
+                    <h4>Personal Finance App</h4>
+                    <p>A budget tracking and financial planning application.</p>
+                    <a href="#" class="btn btn-sm btn-light">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section bg-light">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Testimonials</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="testimonial-item text-center p-4" data-aos="fade-up">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="rounded-circle mb-3" width="80">
+                    <h5>John Anderson</h5>
+                    <p class="text-muted">E-commerce Business Owner</p>
+                    <div class="rating mb-3">
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <p class="testimonial-text">"Emmanuel delivered an outstanding e-commerce solution that exceeded our expectations. His attention to detail and understanding of our business needs resulted in a platform that has significantly increased our sales. Highly recommended!"</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-item text-center p-4" data-aos="fade-up">
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Client" class="rounded-circle mb-3" width="80">
+                    <h5>Sarah Williams</h5>
+                    <p class="text-muted">Marketing Director</p>
+                    <div class="rating mb-3">
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <p class="testimonial-text">"Working with Emmanuel on our social media dashboard was a fantastic experience. He perfectly captured our vision and delivered a user-friendly interface that has streamlined our social media management. His technical skills and communication are top-notch."</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-item text-center p-4" data-aos="fade-up">
+                    <img src="https://randomuser.me/api/portraits/men/29.jpg" alt="Client" class="rounded-circle mb-3" width="80">
+                    <h5>Robert Chen</h5>
+                    <p class="text-muted">Forex Trading Group Leader</p>
+                    <div class="rating mb-3">
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <p class="testimonial-text">"Emmanuel's forex trading platform has revolutionized how our group monitors and executes trades. The real-time signals and intuitive interface have helped our members consistently improve their trading performance. His knowledge of both development and forex trading is impressive!"</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              <div class="carousel-indicators mt-4">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact Me</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-info">
+              <h3>Let's connect</h3>
+              <p>Have a project in mind or want to discuss trading strategies? Feel free to reach out!</p>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <span>emmanuel@example.com</span>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <span>+123 456 7890</span>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>New York, USA</span>
+                </div>
+              </div>
+              <div class="social-links">
+                <a href="https://wa.me/qr/GSNUZMNZLAJ3D1" class="social-icon" target="_blank" data-aos="zoom-in" data-aos-delay="100">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="t.me/emma_fundz" class="social-icon" target="_blank" data-aos="zoom-in" data-aos-delay="200">
+                  <i class="fab fa-telegram"></i>
+                </a>
+                <a href="#" class="social-icon" target="_blank" data-aos="zoom-in" data-aos-delay="300">
+                  <i class="fab fa-snapchat"></i>
+                </a>
+                <a href="#" class="social-icon" target="_blank" data-aos="zoom-in" data-aos-delay="400">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon" target="_blank" data-aos="zoom-in" data-aos-delay="500">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+            <div class="contact-form">
+              <form id="contactForm">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Subject">
+                </div>
+                <div class="mb-4">
+                  <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="text-end">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <span class="logo">emma_fz</span>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0">&copy; 2025 Emmanuel. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="src/js/scripts.js"></script>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
