@@ -45,30 +45,45 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Form submission handler
+// Form submission handler - Updated to send to WhatsApp
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Show success message (in a real scenario, you would send the form data to a server)
-    const formElements = contactForm.elements;
-    for (let i = 0; i < formElements.length; i++) {
-      if (formElements[i].type !== 'submit') {
-        formElements[i].value = '';
-      }
-    }
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
     
-    // Create and show success alert
+    // Create WhatsApp message
+    const whatsappMessage = `Hello Emmanuel, my name is ${name}. \nEmail: ${email} \nSubject: ${subject} \nMessage: ${message}`;
+    
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // Create WhatsApp URL
+    const whatsappURL = `https://wa.me/9046779204?text=${encodedMessage}`;
+    
+    // Show success message
     const alertDiv = document.createElement('div');
     alertDiv.className = 'alert alert-success mt-3';
-    alertDiv.textContent = 'Your message has been sent successfully!';
+    alertDiv.textContent = 'Redirecting to WhatsApp...';
     contactForm.appendChild(alertDiv);
     
-    // Remove alert after 3 seconds
+    // Open WhatsApp in a new window
     setTimeout(() => {
-      alertDiv.remove();
-    }, 3000);
+      window.open(whatsappURL, '_blank');
+      
+      // Reset form
+      contactForm.reset();
+      
+      // Remove alert after 3 seconds
+      setTimeout(() => {
+        alertDiv.remove();
+      }, 3000);
+    }, 1000);
   });
 }
 

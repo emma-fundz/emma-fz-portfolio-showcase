@@ -1400,7 +1400,7 @@ const Index = () => {
             <div class="skill-item">
               <p>HTML & CSS <span>95%</span></p>
               <div class="skill-bar-container">
-                <div class="skill-bar developer-bar" style="--percent: 95%"></div>
+                <div class="skill-bar developer-bar" data-width="95%"></div>
               </div>
             </div>
           </div>
@@ -1408,7 +1408,7 @@ const Index = () => {
             <div class="skill-item">
               <p>JavaScript <span>90%</span></p>
               <div class="skill-bar-container">
-                <div class="skill-bar developer-bar" style="--percent: 90%"></div>
+                <div class="skill-bar developer-bar" data-width="90%"></div>
               </div>
             </div>
           </div>
@@ -1416,7 +1416,7 @@ const Index = () => {
             <div class="skill-item">
               <p>React & Angular <span>85%</span></p>
               <div class="skill-bar-container">
-                <div class="skill-bar developer-bar" style="--percent: 85%"></div>
+                <div class="skill-bar developer-bar" data-width="85%"></div>
               </div>
             </div>
           </div>
@@ -1424,7 +1424,7 @@ const Index = () => {
             <div class="skill-item">
               <p>Node.js & Express <span>80%</span></p>
               <div class="skill-bar-container">
-                <div class="skill-bar developer-bar" style="--percent: 80%"></div>
+                <div class="skill-bar developer-bar" data-width="80%"></div>
               </div>
             </div>
           </div>
@@ -1432,7 +1432,7 @@ const Index = () => {
             <div class="skill-item">
               <p>MongoDB & SQL <span>75%</span></p>
               <div class="skill-bar-container">
-                <div class="skill-bar developer-bar" style="--percent: 75%"></div>
+                <div class="skill-bar developer-bar" data-width="75%"></div>
               </div>
             </div>
           </div>
@@ -1440,7 +1440,7 @@ const Index = () => {
             <div class="skill-item">
               <p>API Integration <span>85%</span></p>
               <div class="skill-bar-container">
-                <div class="skill-bar developer-bar" style="--percent: 85%"></div>
+                <div class="skill-bar developer-bar" data-width="85%"></div>
               </div>
             </div>
           </div>
@@ -1454,7 +1454,7 @@ const Index = () => {
             <div class="skill-item">
               <p>SMC Strategy <span>90%</span></p>
               <div class="skill-bar-container">
-                <div class="skill-bar forex-bar" style="--percent: 90%"></div>
+                <div class="skill-bar forex-bar" data-width="90%"></div>
               </div>
             </div>
           </div>
@@ -1462,7 +1462,7 @@ const Index = () => {
             <div class="skill-item">
               <p>ICT Strategy <span>85%</span></p>
               <div class="skill-bar-container">
-                <div class="skill-bar forex-bar" style="--percent: 85%"></div>
+                <div class="skill-bar forex-bar" data-width="85%"></div>
               </div>
             </div>
           </div>
@@ -1470,7 +1470,7 @@ const Index = () => {
             <div class="skill-item">
               <p>Risk Management <span>95%</span></p>
               <div class="skill-bar-container">
-                <div class="skill-bar forex-bar" style="--percent: 95%"></div>
+                <div class="skill-bar forex-bar" data-width="95%"></div>
               </div>
             </div>
           </div>
@@ -1478,7 +1478,7 @@ const Index = () => {
             <div class="skill-item">
               <p>Technical Analysis <span>90%</span></p>
               <div class="skill-bar-container">
-                <div class="skill-bar forex-bar" style="--percent: 90%"></div>
+                <div class="skill-bar forex-bar" data-width="90%"></div>
               </div>
             </div>
           </div>
@@ -1492,7 +1492,7 @@ const Index = () => {
             <div class="skill-item">
               <p>Market Analysis <span>85%</span></p>
               <div class="skill-bar-container">
-                <div class="skill-bar crypto-bar" style="--percent: 85%"></div>
+                <div class="skill-bar crypto-bar" data-width="85%"></div>
               </div>
             </div>
           </div>
@@ -1500,7 +1500,7 @@ const Index = () => {
             <div class="skill-item">
               <p>DeFi Protocols <span>80%</span></p>
               <div class="skill-bar-container">
-                <div class="skill-bar crypto-bar" style="--percent: 80%"></div>
+                <div class="skill-bar crypto-bar" data-width="80%"></div>
               </div>
             </div>
           </div>
@@ -1508,7 +1508,7 @@ const Index = () => {
             <div class="skill-item">
               <p>Blockchain Fundamentals <span>90%</span></p>
               <div class="skill-bar-container">
-                <div class="skill-bar crypto-bar" style="--percent: 90%"></div>
+                <div class="skill-bar crypto-bar" data-width="90%"></div>
               </div>
             </div>
           </div>
@@ -1516,7 +1516,7 @@ const Index = () => {
             <div class="skill-item">
               <p>NFTs & Web3 <span>75%</span></p>
               <div class="skill-bar-container">
-                <div class="skill-bar crypto-bar" style="--percent: 75%"></div>
+                <div class="skill-bar crypto-bar" data-width="75%"></div>
               </div>
             </div>
           </div>
@@ -1723,15 +1723,15 @@ const Index = () => {
             <div class="contact-details mt-4">
               <div class="contact-item">
                 <i class="fas fa-envelope"></i>
-                <p>emmanuel@email.com</p>
+                <p>emmafund1984@gmail.com</p>
               </div>
               <div class="contact-item">
                 <i class="fas fa-phone"></i>
-                <p>+1 234 567 890</p>
+                <p>+1 904 677 9204</p>
               </div>
               <div class="contact-item">
                 <i class="fas fa-map-marker-alt"></i>
-                <p>New York, USA</p>
+                <p>Lagos, Nigeria</p>
               </div>
             </div>
             <div class="social-links mt-4">
@@ -1750,7 +1750,7 @@ const Index = () => {
               <a href="https://wa.me/qr/GSNUZMNZLAJ3D1" target="_blank" class="social-icon" title="WhatsApp">
                 <i class="fab fa-whatsapp"></i>
               </a>
-              <a href="https://www.snapchat.com/" target="_blank" class="social-icon" title="Snapchat">
+              <a href="https://www.snapchat.com/add/emma_fundfx?share_id=bkvfDiYmOOY&locale=en-US" target="_blank" class="social-icon" title="Snapchat">
                 <i class="fab fa-snapchat-ghost"></i>
               </a>
               <a href="https://t.me/emma_fundz" target="_blank" class="social-icon" title="Telegram">
@@ -1760,18 +1760,18 @@ const Index = () => {
           </div>
         </div>
         <div class="col-lg-6">
-          <form class="contact-form">
+          <form class="contact-form" id="contactForm">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Name" required />
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required />
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="Your Email" required />
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required />
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Subject" />
+              <input type="text" class="form-control" id="subject" placeholder="Subject" />
             </div>
             <div class="form-group">
-              <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+              <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
@@ -1810,15 +1810,15 @@ const Index = () => {
           <h4 class="footer-heading">Contact Info</h4>
           <div class="footer-contact">
             <i class="fas fa-envelope"></i>
-            <p>emmanuel@email.com</p>
+            <p>emmafund1984@gmail.com</p>
           </div>
           <div class="footer-contact">
             <i class="fas fa-phone"></i>
-            <p>+1 234 567 890</p>
+            <p>+1 904 677 9204</p>
           </div>
           <div class="footer-contact">
             <i class="fas fa-map-marker-alt"></i>
-            <p>New York, USA</p>
+            <p>Lagos, Nigeria</p>
           </div>
         </div>
       </div>
@@ -1876,7 +1876,8 @@ const Index = () => {
         const screenPosition = window.innerHeight / 1.2;
         if (itemPosition < screenPosition) {
           const skillBar = item.querySelector('.skill-bar');
-          skillBar.classList.add('animate');
+          const width = skillBar.getAttribute('data-width');
+          skillBar.style.width = width;
           item.classList.add('animate');
         }
       });
@@ -1914,13 +1915,47 @@ const Index = () => {
       animateOnScroll();
     });
 
-    // Form submission
-    const contactForm = document.querySelector('.contact-form');
+    // Form submission - Updated to redirect to WhatsApp
+    const contactForm = document.querySelector('#contactForm');
     if (contactForm) {
       contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        alert('Thank you for your message! I will get back to you soon.');
-        contactForm.reset();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        
+        // Create WhatsApp message
+        const whatsappMessage = \`Hello Emmanuel, my name is \${name}. 
+Email: \${email} 
+Subject: \${subject} 
+Message: \${message}\`;
+        
+        // Encode the message for URL
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+        
+        // Create WhatsApp URL
+        const whatsappURL = \`https://wa.me/9046779204?text=\${encodedMessage}\`;
+        
+        // Show success message
+        const alertDiv = document.createElement('div');
+        alertDiv.className = 'alert alert-success mt-3';
+        alertDiv.textContent = 'Redirecting to WhatsApp...';
+        contactForm.appendChild(alertDiv);
+        
+        // Open WhatsApp in a new window
+        setTimeout(() => {
+          window.open(whatsappURL, '_blank');
+          
+          // Reset form
+          contactForm.reset();
+          
+          // Remove alert after 3 seconds
+          setTimeout(() => {
+            alertDiv.remove();
+          }, 3000);
+        }, 1000);
       });
     }
     
@@ -1979,7 +2014,7 @@ const Index = () => {
             const barPosition = bar.getBoundingClientRect().top;
             const screenPosition = window.innerHeight / 1.3;
             if (barPosition < screenPosition) {
-              bar.style.width = bar.style.getPropertyValue('--percent');
+              bar.style.width = bar.getAttribute('data-width');
             }
           });
         }
