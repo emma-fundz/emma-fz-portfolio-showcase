@@ -5,23 +5,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emmanuel - Developer & Trader Portfolio</title>
-    <meta name="description" content="Portfolio of Emmanuel - Full-Stack Developer, Forex Trader, and Crypto Trader" />
+    <meta name="description" content="Portfolio of Emmanuel - Full-Stack Developer, Forex Trader, and Crypto Trader specializing in web development, design, and financial markets" />
     <meta name="author" content="Emmanuel" />
-
+    <meta name="keywords" content="web developer, full-stack developer, forex trader, crypto trader, portfolio, freelancer, Nigeria" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Emmanuel - Developer & Trader Portfolio" />
+    <meta property="og:description" content="Professional portfolio of Emmanuel - Full-Stack Developer, Forex Trader, and Crypto Trader" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://emma-fz.com" />
+    <meta property="og:image" content="https://emma-fz.com/profile-image.jpg" />
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="src/styles/portfolio.css">
+    <!-- Google Fonts - Adding professional fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/styles/portfolio.css">
   </head>
 
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
-    <!-- Navigation -->
+    <!-- Navigation - Updated with sticky navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#home">
@@ -39,13 +47,19 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#works">My Works</a>
+              <a class="nav-link" href="#works">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -55,14 +69,14 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section - Enhanced with better layout and call to action -->
     <section id="home" class="hero-section d-flex align-items-center">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h1 class="animated-text" data-aos="fade-up" data-aos-duration="1000">
-              Hi, I'm <span class="developer-text">Emmanuel</span>
+              Hi, I'm <span class="highlight-text">Emmanuel</span>
             </h1>
             <p class="lead animated-text" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
               Full-Stack Developer, <span class="forex-text">Forex Trader</span> & <span class="crypto-text">Crypto Trader</span>
@@ -76,46 +90,152 @@
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section - Enhanced with profile image and better layout -->
     <section id="about" class="about-section">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
           <h2>About Me</h2>
           <div class="underline"></div>
         </div>
-        <div class="row">
-          <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="about-card developer-card">
-              <div class="card-icon">
-                <i class="fas fa-code"></i>
-              </div>
-              <h3>Full-Stack Developer</h3>
-              <p>I specialize in building responsive and dynamic websites, developing full-stack applications with modern technologies, writing clean, efficient, and maintainable code, optimizing website performance, and implementing APIs and database management.</p>
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="profile-image">
+              <!-- Replace with an actual profile image -->
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Emmanuel - Developer & Trader" class="img-fluid rounded-circle">
             </div>
           </div>
-          <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-card forex-card">
-              <div class="card-icon">
-                <i class="fas fa-chart-line"></i>
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content">
+              <h3>Who I Am</h3>
+              <p class="lead">A passionate Full-Stack Developer and Financial Markets Trader based in Lagos, Nigeria.</p>
+              <p>I combine my technical expertise in web development with deep knowledge of financial markets to create innovative solutions. With years of experience in both fields, I bring a unique perspective to every project, focusing on clean code, intuitive design, and strategic thinking.</p>
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <ul class="about-list">
+                    <li><i class="fas fa-envelope"></i> <span>Email:</span> emmafund1984@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Location:</span> Lagos, Nigeria</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="about-list">
+                    <li><i class="fas fa-globe"></i> <span>Languages:</span> English, Yoruba</li>
+                    <li><i class="fas fa-calendar"></i> <span>Experience:</span> 5+ Years</li>
+                  </ul>
+                </div>
               </div>
-              <h3>Forex Trader</h3>
-              <p>With expertise in Smart Money Concept (SMC) Strategy and Institutional Concepts Trading (ICT) Strategy, I navigate the forex market with precision using TradingView and MT5 platforms, always maintaining disciplined risk management.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="about-card crypto-card">
-              <div class="card-icon">
-                <i class="fab fa-bitcoin"></i>
+              <div class="mt-4">
+                <a href="#contact" class="btn btn-primary">Hire Me</a>
+                <a href="#" class="btn btn-outline-primary ms-3">Download CV</a>
               </div>
-              <h3>Crypto Trader</h3>
-              <p>I stay ahead in the world of cryptocurrency through detailed market analysis, understanding of DeFi ecosystems, and combining technical and fundamental analysis to identify promising investment opportunities.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- NEW Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>My Services</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Web Development</h3>
+              <p>Custom responsive websites and web applications built with modern technologies and frameworks.</p>
+              <ul class="service-features">
+                <li>Frontend Development</li>
+                <li>Backend Systems</li>
+                <li>API Integration</li>
+                <li>E-commerce Solutions</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Forex Trading</h3>
+              <p>Professional forex trading strategies and analysis using proven SMC and ICT methodologies.</p>
+              <ul class="service-features">
+                <li>Market Analysis</li>
+                <li>Risk Management</li>
+                <li>Trading Signals</li>
+                <li>Strategy Development</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fab fa-bitcoin"></i>
+              </div>
+              <h3>Crypto Trading</h3>
+              <p>Expert cryptocurrency analysis and investment strategies for both short and long-term positions.</p>
+              <ul class="service-features">
+                <li>Token Analysis</li>
+                <li>DeFi Strategies</li>
+                <li>Portfolio Management</li>
+                <li>Trend Identification</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h3>UI/UX Design</h3>
+              <p>User-centered design solutions that enhance user experience and drive engagement.</p>
+              <ul class="service-features">
+                <li>User Interface Design</li>
+                <li>Wireframing & Prototyping</li>
+                <li>User Experience Optimization</li>
+                <li>Mobile App Design</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Database Management</h3>
+              <p>Efficient database solutions for optimal data storage, retrieval, and management.</p>
+              <ul class="service-features">
+                <li>SQL & NoSQL Databases</li>
+                <li>Data Modeling</li>
+                <li>Performance Optimization</li>
+                <li>Data Migration</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>Mentorship</h3>
+              <p>Personalized guidance and training in development, forex, and cryptocurrency trading.</p>
+              <ul class="service-features">
+                <li>Development Coaching</li>
+                <li>Trading Fundamentals</li>
+                <li>Strategy Sessions</li>
+                <li>Career Guidance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section - Improved with better organization -->
     <section id="skills" class="skills-section">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
@@ -139,15 +259,15 @@
                 </div>
               </div>
               <div class="skill-item">
-                <p>Bootstrap <span class="float-end">95%</span></p>
+                <p>React & Angular <span class="float-end">80%</span></p>
                 <div class="skill-bar-container">
-                  <div class="skill-bar developer-bar" data-width="95%"></div>
+                  <div class="skill-bar developer-bar" data-width="80%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <p>APIs <span class="float-end">80%</span></p>
+                <p>Node.js <span class="float-end">75%</span></p>
                 <div class="skill-bar-container">
-                  <div class="skill-bar developer-bar" data-width="80%"></div>
+                  <div class="skill-bar developer-bar" data-width="75%"></div>
                 </div>
               </div>
               <div class="skill-item">
@@ -174,21 +294,21 @@
                 </div>
               </div>
               <div class="skill-item">
-                <p>TradingView <span class="float-end">95%</span></p>
+                <p>Technical Analysis <span class="float-end">85%</span></p>
                 <div class="skill-bar-container">
-                  <div class="skill-bar forex-bar" data-width="95%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <p>MT5 <span class="float-end">90%</span></p>
-                <div class="skill-bar-container">
-                  <div class="skill-bar forex-bar" data-width="90%"></div>
+                  <div class="skill-bar forex-bar" data-width="85%"></div>
                 </div>
               </div>
               <div class="skill-item">
                 <p>Risk Management <span class="float-end">95%</span></p>
                 <div class="skill-bar-container">
                   <div class="skill-bar forex-bar" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p>Market Psychology <span class="float-end">90%</span></p>
+                <div class="skill-bar-container">
+                  <div class="skill-bar forex-bar" data-width="90%"></div>
                 </div>
               </div>
             </div>
@@ -232,93 +352,135 @@
       </div>
     </section>
 
-    <!-- Portfolio/Work Section -->
+    <!-- Portfolio/Work Section - Improved with better project details -->
     <section id="works" class="portfolio-section">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
-          <h2>My Works</h2>
+          <h2>My Portfolio</h2>
           <div class="underline"></div>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="portfolio-item">
+        <div class="portfolio-filters text-center mb-5" data-aos="fade-up">
+          <button class="btn btn-filter active" data-filter="all">All</button>
+          <button class="btn btn-filter" data-filter="development">Development</button>
+          <button class="btn btn-filter" data-filter="forex">Forex</button>
+          <button class="btn btn-filter" data-filter="crypto">Crypto</button>
+        </div>
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item development" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-card">
               <div class="portfolio-img">
-                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166" alt="Development Project 1" class="img-fluid">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166" alt="E-commerce Website" class="img-fluid">
                 <div class="portfolio-overlay developer-overlay">
                   <div class="overlay-content">
                     <h4>E-commerce Website</h4>
                     <p>A fully responsive e-commerce platform with shopping cart functionality.</p>
-                    <a href="#" class="btn btn-sm btn-light">View Project</a>
+                    <div class="tech-stack">
+                      <span>React</span>
+                      <span>Node.js</span>
+                      <span>MongoDB</span>
+                      <span>Stripe</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-light mt-3">View Project</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="portfolio-item">
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item development" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-card">
               <div class="portfolio-img">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Development Project 2" class="img-fluid">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Social Media Dashboard" class="img-fluid">
                 <div class="portfolio-overlay developer-overlay">
                   <div class="overlay-content">
                     <h4>Social Media Dashboard</h4>
-                    <p>An interactive dashboard for managing social media accounts.</p>
-                    <a href="#" class="btn btn-sm btn-light">View Project</a>
+                    <p>An interactive dashboard for managing social media accounts and analytics.</p>
+                    <div class="tech-stack">
+                      <span>Angular</span>
+                      <span>Firebase</span>
+                      <span>Chart.js</span>
+                      <span>Bootstrap</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-light mt-3">View Project</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="portfolio-item">
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item forex" data-aos="fade-up" data-aos-delay="300">
+            <div class="portfolio-card">
               <div class="portfolio-img">
-                <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613" alt="Forex Trading Project" class="img-fluid">
+                <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613" alt="Forex Signal Platform" class="img-fluid">
                 <div class="portfolio-overlay forex-overlay">
                   <div class="overlay-content">
                     <h4>Forex Signal Platform</h4>
-                    <p>A real-time forex signal dashboard for traders.</p>
-                    <a href="#" class="btn btn-sm btn-light">View Project</a>
+                    <p>A real-time forex signal dashboard with technical analysis and alerts.</p>
+                    <div class="tech-stack">
+                      <span>JavaScript</span>
+                      <span>TradingView API</span>
+                      <span>Node.js</span>
+                      <span>WebSockets</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-light mt-3">View Project</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="portfolio-item">
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item crypto" data-aos="fade-up" data-aos-delay="400">
+            <div class="portfolio-card">
               <div class="portfolio-img">
-                <img src="https://images.unsplash.com/photo-1639152201910-5e0d78d3de4d" alt="Crypto Trading Project" class="img-fluid">
+                <img src="https://images.unsplash.com/photo-1639152201910-5e0d78d3de4d" alt="Crypto Portfolio Tracker" class="img-fluid">
                 <div class="portfolio-overlay crypto-overlay">
                   <div class="overlay-content">
                     <h4>Crypto Portfolio Tracker</h4>
-                    <p>A cryptocurrency portfolio tracking application.</p>
-                    <a href="#" class="btn btn-sm btn-light">View Project</a>
+                    <p>A cryptocurrency portfolio tracking application with price alerts and performance metrics.</p>
+                    <div class="tech-stack">
+                      <span>React</span>
+                      <span>CoinGecko API</span>
+                      <span>Firebase</span>
+                      <span>ChartJS</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-light mt-3">View Project</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="portfolio-item">
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item development" data-aos="fade-up" data-aos-delay="500">
+            <div class="portfolio-card">
               <div class="portfolio-img">
-                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8" alt="Development Project 3" class="img-fluid">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8" alt="Educational Platform" class="img-fluid">
                 <div class="portfolio-overlay developer-overlay">
                   <div class="overlay-content">
                     <h4>Educational Platform</h4>
-                    <p>An online learning platform with course management.</p>
-                    <a href="#" class="btn btn-sm btn-light">View Project</a>
+                    <p>An online learning platform with course management and progress tracking.</p>
+                    <div class="tech-stack">
+                      <span>Vue.js</span>
+                      <span>Node.js</span>
+                      <span>MongoDB</span>
+                      <span>Express</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-light mt-3">View Project</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="portfolio-item">
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item development" data-aos="fade-up" data-aos-delay="600">
+            <div class="portfolio-card">
               <div class="portfolio-img">
-                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d" alt="Development Project 4" class="img-fluid">
+                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d" alt="Personal Finance App" class="img-fluid">
                 <div class="portfolio-overlay developer-overlay">
                   <div class="overlay-content">
                     <h4>Personal Finance App</h4>
-                    <p>A budget tracking and financial planning application.</p>
-                    <a href="#" class="btn btn-sm btn-light">View Project</a>
+                    <p>A budget tracking and financial planning application with visualization tools.</p>
+                    <div class="tech-stack">
+                      <span>React Native</span>
+                      <span>Firebase</span>
+                      <span>Redux</span>
+                      <span>D3.js</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-light mt-3">View Project</a>
                   </div>
                 </div>
               </div>
@@ -328,7 +490,7 @@
       </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Testimonials Section - Enhanced with better design -->
     <section id="testimonials" class="testimonials-section bg-light">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
@@ -341,7 +503,7 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="testimonial-item text-center p-4" data-aos="fade-up">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="rounded-circle mb-3" width="80">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Big Step - E-commerce Business Owner" class="rounded-circle mb-3" width="80">
                     <h5>Big Step</h5>
                     <p class="text-muted">E-commerce Business Owner</p>
                     <div class="rating mb-3">
@@ -356,7 +518,7 @@
                 </div>
                 <div class="carousel-item">
                   <div class="testimonial-item text-center p-4" data-aos="fade-up">
-                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Client" class="rounded-circle mb-3" width="80">
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Williams - Marketing Director" class="rounded-circle mb-3" width="80">
                     <h5>Sarah Williams</h5>
                     <p class="text-muted">Marketing Director</p>
                     <div class="rating mb-3">
@@ -371,7 +533,7 @@
                 </div>
                 <div class="carousel-item">
                   <div class="testimonial-item text-center p-4" data-aos="fade-up">
-                    <img src="https://randomuser.me/api/portraits/men/29.jpg" alt="Client" class="rounded-circle mb-3" width="80">
+                    <img src="https://randomuser.me/api/portraits/men/29.jpg" alt="Stanley Binge - Forex Trading Group Leader" class="rounded-circle mb-3" width="80">
                     <h5>Stanley Binge</h5>
                     <p class="text-muted">Forex Trading Group Leader</p>
                     <div class="rating mb-3">
@@ -403,8 +565,74 @@
         </div>
       </div>
     </section>
+    
+    <!-- NEW Blog Section -->
+    <section id="blog" class="blog-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Latest Insights</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="blog-card">
+              <div class="blog-img">
+                <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e" alt="Web Development Trends" class="img-fluid">
+                <div class="blog-date">
+                  <span>25</span>
+                  <span>Mar</span>
+                </div>
+              </div>
+              <div class="blog-content">
+                <div class="blog-category developer-category">Development</div>
+                <h3>Emerging Web Development Trends in 2025</h3>
+                <p>Exploring the latest technologies and methodologies shaping the future of web development.</p>
+                <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="blog-card">
+              <div class="blog-img">
+                <img src="https://images.unsplash.com/photo-1631174274455-7cd2e0096f8f" alt="Forex Trading Analysis" class="img-fluid">
+                <div class="blog-date">
+                  <span>10</span>
+                  <span>Apr</span>
+                </div>
+              </div>
+              <div class="blog-content">
+                <div class="blog-category forex-category">Forex</div>
+                <h3>Smart Money Concept: Advanced Trading Strategies</h3>
+                <p>Breaking down the principles of SMC trading and how to identify institutional price movements.</p>
+                <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="blog-card">
+              <div class="blog-img">
+                <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d" alt="Cryptocurrency Analysis" class="img-fluid">
+                <div class="blog-date">
+                  <span>02</span>
+                  <span>Apr</span>
+                </div>
+              </div>
+              <div class="blog-content">
+                <div class="blog-category crypto-category">Crypto</div>
+                <h3>DeFi Revolution: Opportunities and Risks</h3>
+                <p>Analyzing the growth of decentralized finance and strategies for navigating its ecosystem.</p>
+                <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="400">
+          <a href="#" class="btn btn-outline-primary">View All Posts</a>
+        </div>
+      </div>
+    </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section - Enhanced with better validation and design -->
     <section id="contact" class="contact-section">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
@@ -427,17 +655,17 @@
                 </div>
                 <div class="contact-item">
                   <i class="fas fa-map-marker-alt"></i>
-                  <span>Lgaos, Nigeria</span>
+                  <span>Lagos, Nigeria</span>
                 </div>
               </div>
               <div class="social-links">
                 <a href="https://wa.me/qr/GSNUZMNZLAJ3D1" class="social-icon" target="_blank" data-aos="zoom-in" data-aos-delay="100">
                   <i class="fab fa-whatsapp"></i>
                 </a>
-                <a href="t.me/emma_fundz" class="social-icon" target="_blank" data-aos="zoom-in" data-aos-delay="200">
+                <a href="https://t.me/emma_fundz" class="social-icon" target="_blank" data-aos="zoom-in" data-aos-delay="200">
                   <i class="fab fa-telegram"></i>
                 </a>
-                <a href="#" class="social-icon" target="_blank" data-aos="zoom-in" data-aos-delay="300">
+                <a href="https://www.snapchat.com/add/emma_fundfx?share_id=bkvfDiYmOOY&locale=en-US" class="social-icon" target="_blank" data-aos="zoom-in" data-aos-delay="300">
                   <i class="fab fa-snapchat"></i>
                 </a>
                 <a href="#" class="social-icon" target="_blank" data-aos="zoom-in" data-aos-delay="400">
@@ -445,6 +673,12 @@
                 </a>
                 <a href="#" class="social-icon" target="_blank" data-aos="zoom-in" data-aos-delay="500">
                   <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon" target="_blank" data-aos="zoom-in" data-aos-delay="600">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-icon" target="_blank" data-aos="zoom-in" data-aos-delay="700">
+                  <i class="fab fa-instagram"></i>
                 </a>
               </div>
             </div>
@@ -454,17 +688,32 @@
               <form id="contactForm">
                 <div class="row">
                   <div class="col-md-6 mb-3">
-                    <input type="text" class="form-control" placeholder="Your Name" required>
+                    <div class="form-group">
+                      <label for="name">Your Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                      <div class="invalid-feedback">Please enter your name</div>
+                    </div>
                   </div>
                   <div class="col-md-6 mb-3">
-                    <input type="email" class="form-control" placeholder="Your Email" required>
+                    <div class="form-group">
+                      <label for="email">Your Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                      <div class="invalid-feedback">Please enter a valid email</div>
+                    </div>
                   </div>
                 </div>
                 <div class="mb-3">
-                  <input type="text" class="form-control" placeholder="Subject">
+                  <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                  </div>
                 </div>
                 <div class="mb-4">
-                  <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                  <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                    <div class="invalid-feedback">Please enter your message</div>
+                  </div>
                 </div>
                 <div class="text-end">
                   <button type="submit" class="btn btn-primary">Send Message</button>
@@ -476,15 +725,52 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer - Enhanced with better structure -->
     <footer class="footer py-4">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <span class="logo">emma_fz</span>
+        <div class="row mb-4">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="footer-about">
+              <span class="logo">emma_fz</span>
+              <p class="mt-3">Full-Stack Developer, Forex Trader & Crypto Trader with a passion for creating innovative solutions.</p>
+              <div class="footer-social">
+                <a href="https://wa.me/qr/GSNUZMNZLAJ3D1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://t.me/emma_fundz" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.snapchat.com/add/emma_fundfx?share_id=bkvfDiYmOOY&locale=en-US" target="_blank"><i class="fab fa-snapchat"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6 text-md-end">
-            <p class="mb-0">&copy; 2025 Emmanuel. All rights reserved.</p>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#works">Portfolio</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="footer-title">Contact Info</h4>
+            <div class="footer-contact">
+              <p><i class="fas fa-envelope"></i> emmafund1984@gmail.com</p>
+              <p><i class="fas fa-phone"></i> +234 904 677 9204</p>
+              <p><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2025 Emmanuel. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <p>Designed with <i class="fas fa-heart text-danger"></i> by Emmanuel</p>
+            </div>
           </div>
         </div>
       </div>
