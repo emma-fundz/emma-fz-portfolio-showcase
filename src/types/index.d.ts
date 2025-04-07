@@ -6,4 +6,5 @@ interface Window {
     Collapse: any;
     Carousel: any;
   };
+  AOS: any; // Add AOS to the Window interface
 }
